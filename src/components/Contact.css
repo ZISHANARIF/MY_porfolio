@@ -1,0 +1,148 @@
+.contact{
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 80px;
+margin: 80px 170px;
+}
+.contact-title{
+    position: relative;
+}
+.contact-title h1{
+    padding: 0px;
+    font-size: 80px;
+    font-weight: 600;
+    color: #B0B0B0;
+}
+.contact-title img{
+position: absolute;
+bottom: 0;
+right: 0;
+z-index: -1;
+height: 100px;
+width: 100px;
+margin-right: 415px;
+}
+.contact-section{
+    display: flex;
+    gap: 150px;
+}
+.contact-left{
+    display: flex;
+flex-direction:column;
+gap:30px;
+
+}
+
+.contact-left h1{
+    font-size: 80px;
+font-weight: 700;
+/* background-color: aquamarine; */
+background-color: rgb(124, 116, 132);
+
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.contact-left p{
+    max-width: 550px;
+color: rgb(124, 116, 132);
+font-size: 20px;
+line-height: 35px;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+gap: 30px;
+color:#D8D8D8;
+font-size: 22px;
+}
+
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-right{
+    display: flex;
+flex-direction: column;
+align-items: start;
+gap: 30px;
+color: rgb(124, 116, 132);
+
+}
+.contact-right label{
+    /* color: #D8D8D8; */
+font-size: 22px;
+font-weight: 500;
+}
+
+.contact-right input{
+
+border:none;
+width:700px;
+height:78px;
+padding-left: 20px;
+border-radius: 4px;
+background:#32323c;
+color: #A0A0A0;
+font-family: Outfit;
+font-size: 20px;
+}
+.contact-right textarea{
+    width: 680px;
+border: none;
+padding: 25px;
+border-radius: 4px;
+background: #32323c;
+color: #A0A0A0;
+font-family: outfit;
+font-size: 20px;
+resize: none;
+}
+.contact-detail img{
+    height: 50px;
+    width: 50px;
+}
+
+.contact-submit {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: white;
+    font-size: 22px;
+    padding: 20px 68px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: color 0.4s;
+    z-index: 1;
+}
+
+.contact-submit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, #c242c5, #1212b6); */
+    background-image: linear-gradient(to right, #e7e2e2 0%, #000000 51%, #655a89 100%);
+
+    transition: left 0.4s;
+    border-radius: 50px;
+    z-index: -1; /* This keeps the animation behind the text */
+}
+
+.contact-submit:hover::before {
+    left: 0;
+}
+
+.contact-submit span {
+    position: relative;
+    z-index: 2; /* Ensures the text is above the animation */
+    color: white;
+}

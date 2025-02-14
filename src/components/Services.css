@@ -1,0 +1,123 @@
+.Services{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 80px;
+margin: 80px 170px;
+}
+.services-title{
+    position: relative;
+}
+.services-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+    color: #B0B0B0;
+}
+
+.picon{
+    width: 100px;
+    height: 100px;
+    margin-right: 290px;
+}
+
+
+.services-title img{
+    position: absolute;
+bottom: 0;
+right: 0;
+z-index: -1;
+}
+.services-fromat{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 20px;
+padding: 30px;
+border-radius: 10px;
+border: 2px solid  white;
+transition: 0.4s;
+cursor: pointer;
+}
+
+.services-contianer{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 40px;
+margin-bottom:80px;
+}
+
+.services-fromat h3{
+    font-size: 28px;
+font-weight: 600;
+color:#8c8187;
+}
+
+.services-fromat h2{
+    font-size: 38px;
+font-weight: 800;
+/* background-color: aquamarine; */
+background-color: #8e8d75;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.services-fromat p{
+    color:#A9A9A9;
+font-size: 20px;
+line-height: 30px;
+max-width: 300px;
+}
+.services-readmore button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 50px;
+    /* background-image: linear-gradient(to right, #440326 0%, #1f0334); */
+    background-image: linear-gradient(to right, #e7e2e2 0%, #000000 51%, #655a89 100%);
+    /* background-image: linear-gradient(to right, #4d3a9b 0%, #61045F 51%, #AA076B 100%); */
+
+
+    color: #FFFFFF;
+    font-size: 22px;
+    padding: 20px 68px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: color 0.4s;
+    z-index: 1;
+  }
+  
+  .services-readmore button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, #022f07, #100b55); */
+    background-image: linear-gradient(to right, #101010 0%, #240f35 51%, #000000 100%);
+
+    transition: left 0.4s;
+    border-radius: 50px;
+    z-index: 0;
+  }
+  
+  .services-readmore button:hover::before {
+    left: 0;
+    
+  }
+  
+  .services-readmore button span {
+    position: relative;
+    z-index: 2;
+  }
+  
+.services-fromat:hover{
+    border: 2px solid rgb(54, 2, 54);
+    background-image: linear-gradient(to top, #1e0002 0%, #04001d 100%);
+    transform: scale(1.05);
+    transition: 0.4s;
+}

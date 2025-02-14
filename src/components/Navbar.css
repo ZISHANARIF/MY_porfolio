@@ -1,25 +1,48 @@
+
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 170px;
 }
-.nav-menu{
-display: flex;
-align-items: center;
-list-style: none;
-gap: 60px;
-font-size: 20px;
-}
-.nav-connect{
-padding: 20px 40px;
-border-radius: 50px;
-background-color: aquamarine;
-font-size: 22px;
-cursor: pointer;
-transition: 0.5s;
+
+
+.oyo{
+    font-family: 'Playfair Display', serif;  /* Elegant Serif Font */
+    font-size: 50px;  /* Adjust size as needed */
+    font-weight: 50;  /* Bold but stylish */
+    letter-spacing: 2px;  /* Space out letters slightly */
+    text-transform: uppercase;  /* Ensure all caps */
+
+background:-webkit-linear-gradient(90deg, rgb(22, 22, 22) 6%, rgba(93,9,121,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
 }
 
 .nav-connect:hover{
+    transform: scale(1.05);
+    
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    /* background-color: aquamarine; */
+}
+.anchor-link {
+    text-decoration: none;
+}
+
+.nav-menu p {
+    transition: 0.3s;
+    color: #D3D3D3; /* Default color */
+    cursor: pointer;
+}
+
+.nav-menu p:hover {
+    color: rgb(99, 80, 80); /* Hover color */
     transform: scale(1.05);
 }

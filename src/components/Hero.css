@@ -4,52 +4,84 @@ align-items: center;
 flex-direction: column;
 gap: 35px;
 }
-.hero img{
-    margin-top: 150px;
-}
-.hero h1{
-    text-align: center;
-    width: 70%;
-    font-size: 90px;
-    font-weight: 600;
-}
-.hero h1 span{
-    background-clip: text;
-    background-color: blueviolet;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
+
+h1 {
+    font-size: 3em;
+    color: #B0B0B0;
+    font: caption  "Fira Sans", serif;
+  }
+h2 {
+    font-size: 2rem;
+    font: caption;
+  }
 .hero p{
     width: 50%;
 text-align: center;
 font-size: 24px;
 line-height: 40px;
+color: #B0B0B0;
 }
-.hero-action{
+.zish{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+}
 
-display: flex;
-align-items: center;
-gap: 25px;
-font-size: 24px;
-font-weight: 50;
-margin-bottom: 50px;
-}
 .hero-connect{
     padding: 25px 45px;
 border-radius: 50px;
-background-color: cadetblue;
+background-color: rgb(42, 46, 46);
 cursor: pointer;
 }
-.hero-resume{
-    padding: 25px 75px;
-border-radius: 50px;
-border : 2px solid wheat;
-cursor: pointer;
+.hero-resume {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 50px;
+    /* background-image: linear-gradient(to right, #0b1417 0%, #020b35 51%, #0f191d 100%); */
+    background-image: linear-gradient(to right, #e7e2e2 0%, #000000 51%, #655a89 100%);
+
+
+    color: #E0FFFF;
+
+    font-size: 22px;
+    padding: 20px 68px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: color 0.4s;
+    z-index: 1;
 }
 
-.hero-connect:hover{
-    border-radius: green;
+.hero-resume::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, #c242c5, #1212b6); */
+    background-image: linear-gradient(to right, #101010 0%, #522974 51%, #000000 100%);
+
+    transition: left 0.4s;
+    border-radius: 50px;
+    z-index: 0;
 }
-.hero-resume:hover{
-    border-radius: rgb(30, 0, 128);
+
+.hero-resume:hover::before {
+    left: 0;
+}
+
+.hero-resume span {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-resume a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 2;
 }
