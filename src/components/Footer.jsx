@@ -7,20 +7,6 @@ const Footer = () => {
   return (
     <div id='footer' className="footer">
 
-        {/* <div className="footer-top">
-            <div className="footer-top-left">
-                <img src='' alt='foot'/>
-                <p>Learn How To Create Portfolio Website In React JS. Build Complete React JS Website Step by Step and deploy it online. </p>
-
-            </div>
-            <div className="footer-top-right">
-                <div className="footer-email-input">
-                    <img src=' ' alt='imgage'/>
-                    <input type='email' placeholder='Enter mail'/>
-                </div>
-                
-            </div>
-        </div> */}
         <hr/>
         <div className="footer-bottom">
             <div>

@@ -1,7 +1,7 @@
 const Services_Data = [
     {
         s_no: "01",
-        s_name: "Infinite Quests",
+        s_name: "Universe",
         s_desc: "explore countries by continent or alphabetical order.Integrated interactive features for exploring the universe.",
         project:"https://infinite-quests.vercel.app/"
     },

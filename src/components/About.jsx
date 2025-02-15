@@ -33,17 +33,17 @@ const About = () => {
         <div className="about-achivements">
             <div className="about-achivement">
                 <h1>300+</h1>
-                <p>Probleam solving on leetcode and GFG</p>
+                <p>Problem solving on LeetCode and GFG.</p>
             </div>
             <hr/>
             <div className="about-achivement">
-                <h1>10+</h1>
+                <h1>15+</h1>
                 <p>project</p>
             </div>
             <hr/>
             <div className="about-achivement">
-                <h1>50+</h1>
-                <p>happy colent</p>
+                <h1>More...</h1>
+                <p>Upcoming Project</p>
             </div>
         </div>
 

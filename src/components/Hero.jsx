@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Hero = () => {
   return (
     <div id='home' className='hero'>
-        <img className='zish' src='/zishan.jpeg' alt=''></img>
+        <img className='zish' src='/profile.png' alt=''></img>
         <h1>
         I'm 
         <br/>
@@ -18,19 +18,26 @@ const Hero = () => {
           wrapper="span"
           cursor={false}     // No cursor after the name is typed
           repeat={0}         // No repetition
-          style={{ fontSize: '3em', display: 'inline-block', color: '#B0B0B0', fontWeight: 'bold'  }}
+          style={{ fontSize: '2em', display: 'inline-block', color: '#B0B0B0'  }}
         />
       </h1>
         
         <h2>
         <TypeAnimation
           sequence={[
-            'Software Engineer', // Text 1
+            'MERN Stack Developer', 
             1300,                // Wait for 1 second
-            'Web Developer',     // Text 2
+            'Frontend Developer',     // Text 2
             1300,                // Wait for 1 second
-            'Frontend Developer',// Text 3
-            1300,                // Wait for 1 second
+            'Backend Developer',
+            1300,
+            'Problem Solving Skills',
+            1300,  
+            'Data Analysis ',
+            1300,
+            'SQL and Power Bi',
+            1300,
+                          
             () => {
               console.log('Done typing!'); // Optional callback
             }
@@ -43,8 +50,11 @@ const Hero = () => {
       </h2>
 
 
-        <p> Dynamic Software Engineer with expertise in React.js, JavaScript, and C++,
-        and problem-solving skills and Experienced in building interactive applications</p>
+        <p>I craft high-performance, feature-rich websites using the MERN stack, blending
+            sleek design with robust functionality.
+            Expert in data analysis and problem-solving, I turn complex challenges into
+            strategic solutions. With strong communication and time management,
+            I ensure every project is delivered with precision and impact.</p>
 
           <button className='hero-resume' >
           <NavLink className='anchor-link'

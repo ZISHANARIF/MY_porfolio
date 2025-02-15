@@ -37,7 +37,9 @@ const Cont = () => {
         <div className="contact-section">
             <div className="contact-left">
                 <h1>Let's Talk</h1>
-                <p>Learn How To Create Portfolio Website In React JS. Build Complete React JS Website Step by Step and deploy it online.</p>
+                <p>Have a project in mind? Let’s bring it to life with powerful MERN solutions,
+                     strategic data insights, and precision-driven problem-solving.
+                      Reach out, and let’s create something impactful together.</p>
                 <div className="contact-details">
 
                     <div className="contact-detail">
