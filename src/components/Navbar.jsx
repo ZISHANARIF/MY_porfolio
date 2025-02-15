@@ -19,8 +19,6 @@ const Navbar = () => {
             <li><AnchorLink className='anchor-link' offset={50} href='#mywork'><p className='m' onClick={() => ("mywork")}>Portfolio</p></AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p className='c' onClick={() => ("contact")}>Contact</p></AnchorLink></li>
         </ul>
-        {/* <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div> */}
-    
     </div>
   )
 }

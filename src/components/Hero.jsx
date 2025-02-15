@@ -58,7 +58,7 @@ const Hero = () => {
 
           <button className='hero-resume' >
           <NavLink className='anchor-link'
-              to="/ZISHAN.pdf"
+              to="/ZISHAN_ARIF_RESUME.pdf"
               target="_blank"
               >
               Resume
