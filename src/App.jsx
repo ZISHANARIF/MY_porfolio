@@ -6,12 +6,14 @@ import Services from './components/Services'
 // import MyWork from './components/MyWork'
 import Cont from './components/Cont'
 import Footer from './components/Footer'
+import FloatingParticles from './components/FloatingParticles'
 
 
 
 const App = () => {
   return (
     <div>
+      <FloatingParticles/>
       <Navbar/>
       <Hero/>
       <About/>

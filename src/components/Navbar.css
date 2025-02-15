@@ -14,9 +14,11 @@
     letter-spacing: 2px;  /* Space out letters slightly */
     text-transform: uppercase;  /* Ensure all caps */
 
-background:-webkit-linear-gradient(90deg, rgb(22, 22, 22) 6%, rgba(93,9,121,1) 100%);
+/* background:-webkit-linear-gradient(90deg, rgb(58, 55, 55) 6%, rgb(70, 1, 7) 100%); */
+background:-webkit-linear-gradient(90deg, rgb(10, 1, 47) 6%, rgb(70, 1, 7) 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+
 
 }
 

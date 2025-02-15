@@ -190,39 +190,40 @@ resize: none;
     }
   
     .contact-right input,
-    .contact-right textarea {
-      width: 100%;
+.contact-right textarea {
+    width: 100%;  /* Ensure full responsiveness */
+    box-sizing: border-box;  /* Prevent overflow issues */
+}
+
+.contact-right textarea {
+    padding: 15px;  /* Adjusted for better look on mobile */
+    resize: vertical;  /* Allow vertical resize if needed */
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .contact {
+        margin: 20px;  /* Reduced margin for small screens */
     }
-  
-    .contact-submit {
-      width: 100%;
-      text-align: center;
+
+    .contact-section {
+        flex-direction: column;
+        gap: 30px;
     }
-  }
-  
-  /* Mobile View */
-  @media (max-width: 480px) {
-    .contact-title h1 {
-      font-size: 40px;
-    }
-  
-    .contact-left h1 {
-      font-size: 40px;
-    }
-  
-    .contact-left p {
-      font-size: 16px;
-      line-height: 28px;
-    }
-  
+
     .contact-right input,
     .contact-right textarea {
-      width: 100%;
+        width: 100%;
+        max-width: 100%;  /* Prevents overflow */
     }
-  
+
     .contact-submit {
-      padding: 15px 50px;
-      font-size: 18px;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
     }
+}
+
   }
   

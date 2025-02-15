@@ -9,3 +9,13 @@ background:linear-gradient(90deg, rgba(0,0,0,5) 6%, rgb(30, 3, 39) 100%);
 font-family: 'outfitl' ;
 }
 
+body {
+  overflow-y: scroll;  /* Enable vertical scrolling */
+  overflow-x: hidden;  /* Disable horizontal scrolling */
+}
+
+/* For webkit browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
