@@ -50,9 +50,7 @@ cursor: pointer;
     overflow: hidden;
     border: none;
     border-radius: 50px;
-    /* background-image: linear-gradient(to right, #0b1417 0%, #020b35 51%, #0f191d 100%); */
-    background-image: linear-gradient(to right, #e7e2e2 0%, #000000 51%, #655a89 100%);
-
+    background-color: rgb(80, 70, 74);
 
     color: #E0FFFF;
 
