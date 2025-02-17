@@ -52,17 +52,25 @@ cursor: pointer;
     border-radius: 20%;
 }
 
-.about-achivements{
+/* .about-achivements{
     display: flex;
 width: 100%;
 justify-content: space-around;
 margin-bottom: 80px;
 color: rgb(124, 116, 132);
-
+} */
+.about-achivements{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+color: rgb(124, 116, 132);
 }
 
 .about-achivement{
-    display: 1 flex;
+    display:flex;
 flex-direction: column;
 align-items: center;
 gap: 10px;
@@ -96,56 +104,82 @@ transition: 0.5s;
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 1200px) {
-    .about {
-      margin: 60px 40px;
-    }
-  
-    .about-skills {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
+  .about {
+    margin: 60px 40px;
   }
-  
-  @media (max-width: 768px) {
-    .about {
-      margin: 40px 20px;
-    }
-  
-    .about-title h1 {
-      font-size: 50px;
-    }
-  
-    .about-skills img {
-      width: 80px;
-      height: 80px;
-    }
-  
-    .about-achivements {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .about-achivement h1 {
-      font-size: 40px;
-    }
+
+  .about-skills {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
-  
-  @media (max-width: 480px) {
-    .about-title h1 {
-      font-size: 40px;
-    }
-  
-    .about-skills img {
-      width: 60px;
-      height: 60px;
-    }
-  
-    .about-achivement h1 {
-      font-size: 30px;
-    }
-  
-    .about-achivement p {
-      font-size: 18px;
-    }
+
+  .about-achivements {
+    justify-content: center;
+    gap: 40px;
   }
-  
+
+  .about-achivement h1 {
+    font-size: 50px;
+  }
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .about {
+    margin: 40px 20px;
+  }
+
+  .about-title h1 {
+    font-size: 50px;
+  }
+
+  .about-skills img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-achivements {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-achivement h1 {
+    font-size: 40px;
+  }
+
+  .about-achivement p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* Responsive Design for Mobile Phones */
+@media (max-width: 480px) {
+  .about-title h1 {
+    font-size: 40px;
+  }
+
+  .about-skills img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-achivements {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .about-achivement {
+    width: 90%;
+  }
+
+  .about-achivement h1 {
+    font-size: 30px;
+  }
+
+  .about-achivement p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
