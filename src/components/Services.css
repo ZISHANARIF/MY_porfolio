@@ -1,232 +1,274 @@
-.Services{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 80px;
-margin: 80px 170px;
-}
-.services-title{
-    position: relative;
-}
-.services-title h1{
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
-    color: #B0B0B0;
+.Services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
 }
 
-.picon{
-    width: 100px;
-    height: 100px;
-    margin-right: 290px;
+.services-title {
+  position: relative;
+  text-align: center;
 }
 
-
-.services-title img{
-    position: absolute;
-bottom: 0;
-right: 0;
-z-index: -1;
-}
-.services-fromat{
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 20px;
-padding: 30px;
-border-radius: 10px;
-border: 2px solid  white;
-transition: 0.4s;
-cursor: pointer;
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+  color: #b0b0b0;
 }
 
-.services-contianer{
-    border-radius: 40px;
-    display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 40px;
-margin-bottom:80px;
+.picon {
+  width: 100px;
+  height: 100px;
+  margin-right: 290px;
 }
 
-.services-fromat h3{
-    font-size: 28px;
-font-weight: 600;
-color:#8c8187;
-
+.services-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
-.services-fromat h2{
-    font-size: 38px;
-font-weight: 800;
-/* background-color: aquamarine; */
-background-color: #8e8d75;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.services-fromat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
-.services-fromat p{
-    color:#A9A9A9;
-font-size: 20px;
-line-height: 30px;
-max-width: 300px;
+.services-contianer {
+  border-radius: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 80px;
 }
+
+.services-fromat h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #8c8187;
+}
+
+.services-fromat h2 {
+  font-size: 38px;
+  font-weight: 800;
+  background-color: #8e8d75;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-fromat p {
+  color: #a9a9a9;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 300px;
+}
+
 .services-readmore button {
-    position: relative;
-    overflow: hidden;
-    border: none;
-    border-radius: 50px;
-    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
-    color: #FFFFFF;
-    font-size: 22px;
-    padding: 20px 68px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    cursor: pointer;
-    transition: color 0.4s;
-    z-index: 1;
-  }
-  
-  .services-readmore button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(to right, #022f07, #100b55); */
-    background-image: linear-gradient(to right, #101010 0%, #240f35 51%, #000000 100%);
-
-    transition: left 0.4s;
-    border-radius: 50px;
-    z-index: 0;
-    
-  }
-  
-  .services-readmore button:hover::before {
-    left: 0;
-
-    
-  }
-  
-  .services-readmore button span {
-    position: relative;
-    z-index: 2;
-    
-  }
-  
-.services-fromat:hover{
-    border: 2px solid rgb(54, 2, 54);
-    /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); */
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
-    transform: scale(1.05);
-    transition: 0.4s;
-    animation: flipAnimation 1.0s ease-in-out;
-
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+  color: #ffffff;
+  font-size: 22px;
+  padding: 20px 68px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: color 0.4s;
+  z-index: 1;
 }
 
-/* General Responsive Settings */
+.services-readmore button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #101010 0%, #240f35 51%, #000000 100%);
+  transition: left 0.4s;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.services-readmore button:hover::before {
+  left: 0;
+}
+
+.services-readmore button span {
+  position: relative;
+  z-index: 2;
+}
+
+.services-fromat:hover {
+  border: 2px solid rgb(54, 2, 54);
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  transform: scale(1.05);
+  transition: 0.4s;
+  animation: flipAnimation 1.0s ease-in-out;
+}
+
+/* Responsive Design for Large Screens */
 @media (max-width: 1200px) {
-    .Services {
-      margin: 80px 50px;
-    }
-  
-    .services-title h1 {
-      font-size: 60px;
-    }
-  
-    .services-contianer {
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-    }
-  
-    .services-fromat h3 {
-      font-size: 24px;
-    }
-  
-    .services-fromat h2 {
-      font-size: 32px;
-    }
-  
-    .services-fromat p {
-      font-size: 18px;
-    }
+  .Services {
+    margin: 80px 50px;
   }
-  
-  /* Tablet View */
-  @media (max-width: 768px) {
-    .Services {
-      margin: 50px 20px;
-      gap: 50px;
-    }
-  
-    .services-title h1 {
-      font-size: 50px;
-    }
-  
-    .services-contianer {
-      grid-template-columns: 1fr;
-    }
-  
-    .services-fromat {
-      padding: 20px;
-    }
-  
-    .picon {
-      width: 80px;
-      height: 80px;
-      margin-right: 0;
-    }
-  
-    .services-fromat h3 {
-      font-size: 22px;
-    }
-  
-    .services-fromat h2 {
-      font-size: 30px;
-    }
-  
-    .services-fromat p {
-      font-size: 16px;
-    }
-  
-    .services-readmore button {
-      font-size: 20px;
-      padding: 15px 50px;
-    }
+
+  .services-title h1 {
+    font-size: 60px;
   }
-  
-  /* Mobile View */
-  @media (max-width: 480px) {
-    .Services {
-      margin: 30px 10px;
-      gap: 30px;
-    }
-  
-    .services-title h1 {
-      font-size: 40px;
-    }
-  
-    .services-fromat {
-      padding: 15px;
-    }
-  
-    .services-fromat h3 {
-      font-size: 20px;
-    }
-  
-    .services-fromat h2 {
-      font-size: 26px;
-    }
-  
-    .services-fromat p {
-      font-size: 14px;
-    }
-  
-    .services-readmore button {
-      font-size: 18px;
-      padding: 10px 30px;
-    }
+
+  .picon {
+    width: 80px;
+    height: 80px;
+    margin-right: 100px;
   }
-  
+
+  .services-contianer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .services-fromat h3 {
+    font-size: 24px;
+  }
+
+  .services-fromat h2 {
+    font-size: 32px;
+  }
+
+  .services-fromat p {
+    font-size: 18px;
+  }
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 992px) {
+  .Services {
+    margin: 50px 20px;
+    gap: 50px;
+  }
+
+  .services-title h1 {
+    font-size: 50px;
+  }
+
+  .services-title img {
+    width: 80px;
+    height: 80px;
+    bottom: -10px;
+    right: 10px;
+  }
+
+  .picon {
+    width: 70px;
+    height: 70px;
+    margin-right: 0;
+  }
+
+  .services-contianer {
+    grid-template-columns: 1fr;
+  }
+
+  .services-fromat {
+    padding: 20px;
+  }
+
+  .services-fromat h3 {
+    font-size: 22px;
+  }
+
+  .services-fromat h2 {
+    font-size: 30px;
+  }
+
+  .services-fromat p {
+    font-size: 16px;
+  }
+
+  .services-readmore button {
+    font-size: 20px;
+    padding: 15px 50px;
+  }
+}
+
+/* Responsive Design for Mobile Phones */
+@media (max-width: 768px) {
+  .Services {
+    margin: 30px 10px;
+    gap: 30px;
+  }
+
+  .services-title h1 {
+    font-size: 40px;
+  }
+
+  .services-title img {
+    width: 60px;
+    height: 60px;
+    bottom: -5px;
+    right: 5px;
+  }
+
+  .picon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .services-fromat {
+    padding: 15px;
+  }
+
+  .services-fromat h3 {
+    font-size: 20px;
+  }
+
+  .services-fromat h2 {
+    font-size: 26px;
+  }
+
+  .services-fromat p {
+    font-size: 14px;
+  }
+
+  .services-readmore button {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+}
+
+/* Responsive Design for Small Mobile Phones */
+@media (max-width: 480px) {
+  .services-title h1 {
+    font-size: 30px;
+  }
+
+  .services-fromat h3 {
+    font-size: 18px;
+  }
+
+  .services-fromat h2 {
+    font-size: 22px;
+  }
+
+  .services-fromat p {
+    font-size: 12px;
+  }
+
+  .services-readmore button {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+}
