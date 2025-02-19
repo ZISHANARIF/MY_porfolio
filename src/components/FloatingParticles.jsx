@@ -1,5 +1,3 @@
-// src/components/FloatingParticles.js
-
 import React, { useEffect } from "react";
 import "./FloatingParticles.css";
 
@@ -17,7 +15,7 @@ const FloatingParticles = () => {
       particleContainer.appendChild(particle);
     }
 
-    // Remove particles after 7 seconds
+    // Remove particles after 10 seconds
     setTimeout(() => {
       particleContainer.style.display = "none";
     }, 10000);
