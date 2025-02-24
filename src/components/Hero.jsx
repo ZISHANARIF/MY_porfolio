@@ -52,7 +52,7 @@ const Hero = () => {
       </p>
 
       <button className='hero-resume'>
-        <NavLink className='anchor-link' to="/ZISHAN_ARIF_RESUME.pdf" target="_blank">
+        <NavLink className='anchor-link' to="/ZISHAN_ARIF(RESUME).pdf" target="_blank">
           Resume
         </NavLink>
       </button>
