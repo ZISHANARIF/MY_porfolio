@@ -37,7 +37,10 @@ color: #B0B0B0;
   border-radius: 50%;
   animation: flipAnimation 1.0s ease-in-out;
 }
-
+img{
+  width: 50px;
+  height: 50px;
+}
 
 .hero-connect{
     padding: 25px 45px;
@@ -49,8 +52,9 @@ cursor: pointer;
     position: relative;
     overflow: hidden;
     border: none;
-    border-radius: 50px;
-    background-color: rgb(80, 70, 74);
+    border-radius: 20px;
+    background-color: #090909;
+    border: 3px solid rgb(26, 2, 89);
 
     color: #E0FFFF;
 
@@ -73,7 +77,7 @@ cursor: pointer;
     background-image: linear-gradient(to right, #101010 0%, #522974 51%, #000000 100%);
 
     transition: left 0.4s;
-    border-radius: 50px;
+    border-radius: 20px;
     z-index: 0;
 }
 

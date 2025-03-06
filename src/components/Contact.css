@@ -111,8 +111,9 @@ resize: none;
     position: relative;
     overflow: hidden;
     border: none;
-    border-radius: 50px;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 20px;
+    background-color: #090909;
+    border: 2px solid rgb(1, 1, 95);
     color: white;
     font-size: 22px;
     padding: 20px 68px;
@@ -133,7 +134,7 @@ resize: none;
     background-image: linear-gradient(to right, #e7e2e2 0%, #000000 51%, #655a89 100%);
 
     transition: left 0.4s;
-    border-radius: 50px;
+    border-radius: 20px;
     z-index: -1; /* This keeps the animation behind the text */
 }
 
